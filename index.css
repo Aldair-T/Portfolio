@@ -32,6 +32,11 @@ body {
     height: 63px;
 }
 
+.navegacion{
+    width: 4.5vw;
+    height: 12vh;
+}
+
 /* Header Estilos */
 
 header{
@@ -98,13 +103,13 @@ hr {
 .presentacion {
     font-family: var(--font-text);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 6.5vw;
 }
 
 .sobre_mi {
     font-family: var(--font-text);
     font-weight: 100;
-    font-size: 13px;
+    font-size: 4vw;
 }
 
 /*--------------*/
@@ -113,6 +118,7 @@ hr {
 h2 {
     color: var(--color-text);
     font-family: var(--font-text);
+    font-size: 6.4vw;
     padding: 7rem 0;
     padding-left: 1.5rem;
 }
@@ -128,20 +134,21 @@ h2 {
     display: grid;
     grid-template-columns: 76vw 1fr;
     width: 100vw;
+    height: 60vh;
     padding-left: 1.5rem;
 }
 
 .herramientas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 12vh);
+    grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 3em;
 }
 
 
 .herramientas img {
-    width: 30px;
-    height: 30px;
+    width: 9vw;
+    height: 9vh;
 }
 
 .herramientas span{
@@ -269,7 +276,6 @@ h2 {
 
 .contenedor-form {
     align-items: center;
-    max-width: 400px;
     background-color: rgba(245, 72, 83, 0.7);
     padding: 40px;
     border-radius: 4%;
@@ -335,5 +341,9 @@ form label{
     cursor: pointer;
 }
 
-.bgc {
+@media screen and (min-width: 700px) {
+    .contenedor-form {
+        max-width: 600px;
+        margin-left: 20vw;
+    }
 }
