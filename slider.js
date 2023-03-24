@@ -64,3 +64,14 @@ async function handleSubmit(event){
         alert('Gracias por contactarme :)')
     }
 }
+
+/* Nav Configuracion */
+$(document).ready(function(){
+    $(window).on('scroll', function(){
+        if ($(window).scrollTop()){
+            $("nav").addClass('bgc');
+        }else{
+            $("nav").removeClass('bgc');
+        };
+    });
+});
