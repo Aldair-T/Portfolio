@@ -94,14 +94,18 @@
         <h2>ctame</h2>
         <div class="contenedor-contacto">
             <div class="contenedor-form">
+                <div class="cont-redes">                                               
+                    <a target="_blank" href=""><img src="img/linkedin.svg"></a>
+                    <a target="_blank" href=""><img src="img/instagram.svg"></a>
+                    <a target="_blank" href=""><img src="img/twitter.svg"></a>
+                </div>
                 <form id="form" class="form" autocomplete="off" action="https://formspree.io/f/xqkodyro" method="POST">
                     <label for="name">Nombre:</label>
-                    <input required type="text" name="nombre" class="nombre" id="nombre">
+                    <input required type="text" name="nombre" class="nombre" id="nombre" maxlength="30">
                     <label for="email">Email:</label>
                     <input type="email" name="email" class="email" id="email">
                     <label for="mennsaje">Mensaje:</label>
-                    <textarea name="mensaje" id="message" cols="30" rows="10">
-                    </textarea>
+                    <textarea name="mensaje" id="message" cols="30" rows="10" maxlength="1000"></textarea>
                     <div class="cont-btn">
                         <button type="submit" class="submit">Enviar mensaje</button>
                     </div>

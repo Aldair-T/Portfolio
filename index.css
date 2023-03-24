@@ -160,38 +160,6 @@ h2 {
     object-fit: cover;
 }
 
-.contenedor-btns {
-    display: flex;
-    justify-content: center;
-    margin-top: -9px;
-}
-
-.slider_btn {
-    width: 40px;
-    font-size: 30px;
-    font-family: 'Zilla Slab', serif;
-    font-weight: 700;
-    text-align: center;
-    cursor: auto;
-    color: var(--color-text);
-    border: 1px solid var(--color-text);
-    border-radius: 50%;
-    margin: 0 5px;
-}
-
-.slider_btn:hover{
-    transition: 0.4s ease;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.slider_btn-izq {
-    left: -15px;
-}
-
-.slider_btn-der{
-    right: -15px;
-}
-
 .slider_div div {
     display: flex;
     flex-direction: column;
@@ -219,6 +187,34 @@ h2 {
     text-shadow: black 4px 4px 10px;
 }
 
+.contenedor-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: -9px;
+}
+
+.slider_btn {
+    width: 40px;
+    font-size: 30px;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 700;
+    text-align: center;
+    cursor: default;
+    color: var(--color-text);
+    border: 1px solid var(--color-text);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.slider_btn:hover{
+    transition: 0.4s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/*--------------------------*/
+
+
 /* Contacto Estilos */
 
 .contacto h2:before{
@@ -234,14 +230,43 @@ h2 {
     width: 100vw;
     padding-left: 1.5rem;
     justify-items: stretch;
+    margin-bottom: 50px;
+}
+
+.contenedor-form {
+    align-items: center;
+    max-width: 400px;
+    background-color: rgba(245, 72, 83, 0.7);
+    padding: 40px;
+    border-radius: 4%;
+}
+
+.cont-redes a img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
 }
 
 
 form input, form textarea {
-    color: black;
+    color: white;
+    font-family: var(--font-text);
+    text-transform: capitalize;
     background-color: transparent;
+    outline: none;
     border: none;
     border-bottom: 1px  solid var(--color-text);
+}
+
+form input:focus, form textarea:focus {
+    border-bottom: 2.5px  solid var(--color-text);
 }
 
 form label{
@@ -270,22 +295,8 @@ form label{
     transition-property: transform;
 }
 
-.form button:hover {
+.form button:hover, .cont-redes a img:hover{
     transition: all 0.6s;
     transform: scale(1.1);
     cursor: pointer;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.contenedor-form {
-    align-items: center;
-    max-width: 400px;
-    background-color: rgba(245, 72, 83, 0.7);
-    padding: 40px;
-    border-radius: 4%;
 }
