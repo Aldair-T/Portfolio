@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;700&display=swap');
+    </style>
     <title>Portfolio Alda</title>
 </head>
 <body>
@@ -48,23 +51,63 @@
     </section>
     <section class="proyectos" id="proyectos">
         <h2>olio</h2>
-        <div class="contenedor-proyectos">
+        <div class="proyectos-grid">
             <div class="contenedor-slider">
                 <div class="slider" id="slider">
-                    <div class="slider_seccion">
-                        <div class="slider_div uno"></div>
-                    </div>
-                    <div class="slider_seccion">
-                        <div class="slider_div dos"></div>
-                    </div>
-                    <div class="slider_seccion">
-                        <div class="slider_div tres"></div>
-                    </div>
+                    <article class="slider_seccion">
+                        <div class="slider_div">
+                            <div>
+                                <img src="img/icono_vivofutbol.svg" alt="vivofutbol-web">
+                                <p>Pagina web en el que consumimos una api de futbol</p>
+                                <a href="#">Visitar ></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="slider_seccion">
+                        <div class="slider_div">
+                            <div>
+                                <img src="img/github.svg" alt="github-repo">
+                                <p>Repositorio GitHub con algunos proyectos Backend</p>
+                                <a href="#">Visitar ></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="slider_seccion">
+                        <div class="slider_div">
+                            <div>
+                                <img src="img/portafolio.svg" alt="primer_portfolio">
+                                <p>Primer portfolio que cree, el cual le tome mucho cariño <3</p>
+                                <a href="#">Visitar ></a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <div class="slider_btn slider_btn-izq" id="btn-der">&#60</div>
-                <div class="slider_btn slider_btn-der" id="btn-izq">&#62</div>
+                <div class="contenedor-btns">
+                    <div class="slider_btn slider_btn-izq" id="btn-der">&#60</div>
+                    <div class="slider_btn slider_btn-der" id="btn-izq">&#62</div>
+                </div>
             </div>
             <span class="contenedor-img"><img src="img/Group3.svg" class="navegacion"></span>
+        </div>
+    </section>
+    <section class="contacto" id="contacto">
+        <h2>ctame</h2>
+        <div class="contenedor-contacto">
+            <div class="contenedor-form">
+                <form id="form" class="form" autocomplete="off" action="https://formspree.io/f/xqkodyro" method="POST">
+                    <label for="name">Nombre:</label>
+                    <input required type="text" name="nombre" class="nombre" id="nombre">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="email" id="email">
+                    <label for="mennsaje">Mensaje:</label>
+                    <textarea name="mensaje" id="message" cols="30" rows="10">
+                    </textarea>
+                    <div class="cont-btn">
+                        <button type="submit" class="submit">Enviar mensaje</button>
+                    </div>
+                </form>
+            </div>
+            <span class="contenedor-img"><img src="img/Group4.svg" class="navegacion"></span>
         </div>
     </section>
     <script src="slider.js"></script>
