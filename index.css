@@ -298,7 +298,6 @@ h2 {
 form input, form textarea {
     color: white;
     font-family: var(--font-text);
-    text-transform: capitalize;
     background-color: transparent;
     outline: none;
     border: none;
