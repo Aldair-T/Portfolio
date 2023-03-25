@@ -61,7 +61,7 @@ async function handleSubmit(event){
 
     if (response.ok) {
         this.reset()
-        alert('Gracias por contactarme :)')
+        Swal.fire('Enviado!','Gracias por contactarme :)','success')
     }
 }
 
