@@ -184,7 +184,7 @@ h2 {
 
 .slider{
     display: flex;
-    width: 300%; /* Esto depende de cuantas img son 3==300%, 4==400% */
+    width: 400%; /* Esto depende de cuantas img son 3==300%, 4==400% */
     height: 230px;
     margin-left: -100%;
 }
